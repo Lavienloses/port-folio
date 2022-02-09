@@ -370,7 +370,7 @@ body ::-webkit-scrollbar {
     padding-right: 1em;
     text-align: center;
     font-size: 0.9em;
-    right: 0;
+    left: 22em;
 }
 
 .komi-1 {
