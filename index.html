@@ -3,239 +3,34 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>ポートフォリオ</title>
+        <title>test</title>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
-        <!--<script src="jquery.pjax.min.js"></script>-->
-        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
 
 
-    <body>
-        <!--<script>
-            alert("こんにちは")
-        </script>-->
-        <ul class="page-half">
-    <li class="left-box">
-        <div class="header-left-img">
-            <img class="image1" src="pictures/IMG_3617.JPG">
-            </div>
+<body>
+    <form action="contactform.php" method="post">         
+        <!--formタグ　入力フォームを作るタグ　　actionタグ　送信先指定する、次の画面にいく時のファイルを呼び出す
+        　　 methodタグ　次の画面に移動するときにデータを入力してくれる感じ？、postはサーバーに送るための指定-->
 
-            <!--<a href="#hbg-menu" class="slide-menu">
-                これがあるとcssのcheckedが効かない、指定してるため-->
+        名前<input type="text" name="fullname" value="">
+        <!--inputタグ　input type="email"にすると、ブラウザが入力欄をEメールだと認識、textでも良いらしい
+            nameタグ　inputタグにつける固有の名前、なんでも良いらしい-->
 
-            <input type="checkbox" id="check_input">
-            <label id="nav-btn" for="check_input">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-            </label>
-            <!--</a>-->
-        <div id="hbg-menu">
-            <section class="nav-1">
-                <a href="#box3">
-                <h3>About</h3>
-                </a>
-                <a href="#">
-                <h3>Work</h3>
-                </a>
-                <a href="#">
-                <h3>Contact</h3>
-                </a>
-            <span class="sns-box">
-                <li>
-                <a href="https://www.instagram.com/a_j_careless">
-                    <img src="pictures/rogo/instagram.svg">
-                  </a>
-                  </li>
-                  <li>
-                  <a href="https://twitter.com/lavien_loses">
-                    <img src="pictures/rogo/twitter.svg">
-                  </a>
-                  </li>
-                  <li>
-                  <a href="https://github.com/Lavienloses">
-                    <img src="pictures/rogo/github.svg">
-                  </a>
-                  </li>
-            </span>
+        メール<input type="email" name="email"  value="">
 
-            </section>
+        本文<textarea type="message" id="" cols="" rows="">
+            </textarea>
+            <input type="submit" name="confirm" value="確認" class="button">
+            <!--inpur type="submit"で送信するボタン、valueに入れたものがボタンの文字として表示される-->
+    </form>
+
+    <a href="mail.php">
+    <div class="botton">ボタン
     </div>
-
-</li>
-
-
-<li class="right-box">
-    <div class="m-visual">
-    <section class="box1">
-         <div class="center slide">
-          <img src="pictures/guitar.JPG">
-          <img src="pictures/chokolate.jpg">
-          <img src="pictures/me&hibiki.JPG">
-          <img src="pictures/guitar.JPG">
-         </div>
-    </section>
-
-    <section class="box2">
-        <div class="r-1">
-            <h2>松田勝輝のポートフォリオ</h2>
-            <p>当ページを見ていただきまして、ありがとうございます。<br>本ページでは、制作物等掲載しております。見にくい部分等あると思いますが、最後まで見ていただけると幸いです。</p>
-        </div>
-
-        
-
-
-    </section>
-    </div>
-
-    <section id="box3">
-        <div class="myself-box">
-        <h1>About</h1>
-      
-        <div class="jikosyoukai">
-            <span class="face">
-            <img class="image" src="pictures/myface.png">
-            <!--<img class="image" src="pictures/me_face.png">-->
-            </span>
-
-            <div class="mytext">
-            <h2 class="komi-1">Profile</h2>
-            <i></i>
-            <p class="my-text">
-                名前:  松田  勝輝<br>なまえ:  まつだ  しょうき<br>生年月日:  2002年6月15日<br>趣味:  楽器に触ること、昼寝<br>略歴:  岩手県立花北青雲高等学校  情報工学科卒業
-            </p>
-            <h2 class="komi-2">Skill</h2>
-            <ul class="codeing-box">
-                <li>
-                <img src="pictures/rogo/html.svg">
-                </li>
-                <li>
-                <img src="pictures/rogo/css.svg">
-                </li>
-                <li>
-                <img src="pictures/rogo/github.svg">
-                </li>
-            </ul>
-            <h2 class="komi-3">My Site・SNS</h2>
-              <ul class="sns-box">
-                  <li>
-                    <a href="https://www.instagram.com/a_j_careless">
-                      <img src="pictures/rogo/instagram.svg">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="https://twitter.com/lavien_loses">
-                      <img src="pictures/rogo/twitter.svg">
-                    </a>
-                    </li>
-                    <li>
-                    <a href="https://github.com/Lavienloses">
-                      <img src="pictures/rogo/github.svg">
-                    </a>
-                    </li>
-              </ul>
-        </div>
-        </div>
-
-        </div>
-
-
-
-    </section>
-
-    <!--<section class="box4">
-        <h1>学んでいること</h1>
-        <script>alert(ようこそ)</script>
-    </section>-->
-
-    <section class="box5">
-        <section class="item-box">
-        <h1 class="h_2">制作物（ほんの一部）</h1>
-        <div class="accordion">
-            <ul>
-            <li>    
-            <input type="checkbox" id="check1" class="accordion-hidden">
-            <label for="check1" class="accordion-open"><p>デッサン</p></label>
-            <label for="check1" class="accordion-inner">
-                <p>透視図法など</p>
-                <span class="img-box">
-                    <img src="pictures/scan/photo032.jpg">
-                </span>
-            </label>
-            </li>
-
-            <li>
-            <input type="checkbox" id="check2" class="accordion-hidden">
-            <label for="check2" class="accordion-open"><p>色彩実習</p></label>
-            <label for="check2" class="accordion-inner">
-                <p>配色などの色を使うための基礎を学ぶものです</p>
-                <span class="img-box">
-                    <img src="pictures/"　alt="色彩　画像">
-                </span>
-            </label>
-            </li>
-
-            <li>
-            <input type="checkbox" id="check3" class="accordion-hidden">
-            <label for="check3" class="accordion-open"><p>マルチメディア実習</p></label>
-            <label for="check3" class="accordion-inner">
-                <p>各ソフトの使い方・媒体の扱い方等を学びます</p>
-                <span class="img-box">
-                    <img src="pictures/scan/pictogram.jpg">
-                    <img src="pictures/guitar.JPG">
-                </span>
-            </label>
-            </li>
-
-            <li>
-            <input type="checkbox" id="check4" class="accordion-hidden">
-            <label for="check4" class="accordion-open"><p>製品デザイン基礎実習</p></label>
-            <label for="check4" class="accordion-inner">
-                <p>実践に近い内容の実習をしています</p>
-                <span class="img-box">
-                    <img src="pictures/scan/posuta-.jpg">
-                </span>
-            </label>
-            </li>
-
-            <li>
-            <input type="checkbox" id="check5" class="accordion-hidden">
-            <label for="check5" class="accordion-open"><p>自主制作等</p></label>
-            <label for="check5" class="accordion-inner">
-                <p>ギターを作っています</p>
-                <span class="img-box">
-                    <img src="pictures/guitar.JPG">
-                </span>
-            </label>
-            </li>
-
-            <!--<li>
-            <input type="checkbox" id="check6" class="accordion-hidden">
-            <label for="check6" class="accordion-open"><p>デッサン</p></label>
-            <label for="check6" class="accordion-inner">
-                <span class="img-box">
-                    <img src="pictures/guitar.JPG">
-                </span>
-            </label>
-            </li>-->
-           </ul>
-        </div>
-         
-    
-    </section>
-    </section>
-
-    <section class="box6">
-        <h1>お問い合わせ</h1>
-        名前　メアド　要件
-        後で作るから勘弁
-    </section>
-
-</li>
-</ul>
-<script type="text/javascript" src="script.js"></script>
+    </a>
 </body>
-</html>
+
+
+    </html>
