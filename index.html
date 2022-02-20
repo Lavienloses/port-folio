@@ -3,34 +3,23 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>test</title>
-
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-    </head>
-
-
+        <title>ホーム</title>
+</head>
 <body>
-    <form action="contactform.php" method="post">         
-        <!--formタグ　入力フォームを作るタグ　　actionタグ　送信先指定する、次の画面にいく時のファイルを呼び出す
-        　　 methodタグ　次の画面に移動するときにデータを入力してくれる感じ？、postはサーバーに送るための指定-->
-
-        名前<input type="text" name="fullname" value="">
-        <!--inputタグ　input type="email"にすると、ブラウザが入力欄をEメールだと認識、textでも良いらしい
-            nameタグ　inputタグにつける固有の名前、なんでも良いらしい-->
-
-        メール<input type="email" name="email"  value="">
-
-        本文<textarea type="message" id="" cols="" rows="">
-            </textarea>
-            <input type="submit" name="confirm" value="確認" class="button">
-            <!--inpur type="submit"で送信するボタン、valueに入れたものがボタンの文字として表示される-->
-    </form>
-
-    <a href="mail.php">
-    <div class="botton">ボタン
+  <div data-barba="wrapper">
+    <p>この部分は切り替わらない。</p>
+    <div data-barba="container" data-barba-namespace="home">
+      <h3>最初のページです。</h3>
+      <p>この部分の内容は切り替わる。</p>
+      <p><a href="./foo.php">./foo.php</a>押してみろぃ</p>
     </div>
-    </a>
+  </div>
+  <script>
+    barba.init({
+      // ...
+    })
+    </script>
+
+<script defer src="https://unpkg.com/@barba/core"></script>
 </body>
-
-
-    </html>
+</html>
