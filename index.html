@@ -3,23 +3,258 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>ホーム</title>
-</head>
-<body>
-  <div data-barba="wrapper">
-    <p>この部分は切り替わらない。</p>
-    <div data-barba="container" data-barba-namespace="home">
-      <h3>最初のページです。</h3>
-      <p>この部分の内容は切り替わる。</p>
-      <p><a href="./foo.php">./foo.php</a>押してみろぃ</p>
-    </div>
-  </div>
-  <script>
-    barba.init({
-      // ...
-    })
-    </script>
+        <title>ポートフォリオ</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
 
-<script defer src="https://unpkg.com/@barba/core"></script>
+
+    <body>
+        <main>
+        <!--<script>
+            alert("こんにちは")
+        </script>-->
+        <section class="page-half" id="barba-wrapper" aria-live="polite">
+    <div class="left-box">
+        <div class="header-left-img">
+            <img class="image1" src="pictures/IMG_3617.JPG">
+            </div>
+
+            <!--<a href="#hbg-menu" class="slide-menu">
+                これがあるとcssのcheckedが効かない、指定してるため-->
+
+            <input type="checkbox" id="check_input">
+            <label id="nav-btn" for="check_input">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+            </label>
+            <!--</a>-->
+        <div id="hbg-menu">
+            <section class="nav-1">
+                <a href="#box3">
+                <h3>About</h3>
+                </a>
+                <a href="./dessan.html">
+                <h3>Work</h3>
+                </a>
+                <a href="#">
+                <h3>Contact</h3>
+                </a>
+            <span class="sns-box">
+                <li>
+                <a href="https://www.instagram.com/a_j_careless">
+                    <img src="pictures/rogo/instagram.svg">
+                  </a>
+                  </li>
+                  <li>
+                  <a href="https://twitter.com/lavien_loses">
+                    <img src="pictures/rogo/twitter.svg">
+                  </a>
+                  </li>
+                  <li>
+                  <a href="https://github.com/Lavienloses">
+                    <img src="pictures/rogo/github.svg">
+                  </a>
+                  </li>
+            </span>
+
+            </section>
+    </div>
+
+</div>
+
+<!----barba.jsの設定---->
+<div class="barba-container">
+<!----ここから画面遷移の対象---->
+    <div class="m-visual">
+    <section class="box1">
+         <div class="center slide">
+          <img src="pictures/guitar.JPG">
+          <img src="pictures/chokolate.jpg">
+          <img src="pictures/IMG_3652.jpg">
+          <img src="pictures/guitar.JPG">
+         </div>
+    </section>
+
+    <section class="box2">
+        <div class="r-1">
+
+        <!--<a class="js-pjax" href="https://www.google.com/?hl=ja">-->
+            <h2>松田勝輝のポートフォリオ</h2>
+<!--</a>-->
+        
+            <p>当ページを見ていただきまして、ありがとうございます。<br>本ページでは、制作物等掲載しております。見にくい部分等あると思いますが、最後まで見ていただけると幸いです。</p>
+        </div>
+
+        
+
+
+    </section>
+    </div>
+
+    <section id="box3">
+        <div class="myself-box">
+        <h1>About</h1>
+      
+        <div class="jikosyoukai">
+            <span class="face">
+            <img class="image" src="pictures/myface.png">
+            <!--<img class="image" src="pictures/me_face.png">-->
+            </span>
+
+            <div class="mytext">
+            <h2 class="komi-1">Profile</h2>
+            <i></i>
+            <p class="my-text">
+                名前:  松田  勝輝<br>なまえ:  まつだ  しょうき<br>生年月日:  2002年6月15日<br>趣味:  楽器に触ること、昼寝<br>略歴:  岩手県立花北青雲高等学校  情報工学科卒業
+            </p>
+            <h2 class="komi-2">Skill</h2>
+            <ul class="codeing-box">
+                <li>
+                <img src="pictures/rogo/html.svg">
+                </li>
+                <li>
+                <img src="pictures/rogo/css.svg">
+                </li>
+                <li>
+                <img src="pictures/rogo/github.svg">
+                </li>
+            </ul>
+            <h2 class="komi-3">My Site・SNS</h2>
+              <ul class="sns-box">
+                  <li>
+                    <a href="https://www.instagram.com/a_j_careless">
+                      <img src="pictures/rogo/instagram.svg">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://twitter.com/lavien_loses">
+                      <img src="pictures/rogo/twitter.svg">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://github.com/Lavienloses">
+                      <img src="pictures/rogo/github.svg">
+                    </a>
+                    </li>
+              </ul>
+        </div>
+        </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!--<section class="box4">
+        <h1>学んでいること</h1>
+        <script>alert(ようこそ)</script>
+    </section>-->
+
+    <section class="box5">
+        <section class="item-box">
+        <h1 class="h_2">制作物（ほんの一部）</h1>
+        <div class="accordion">
+            <ul>
+            <li>    
+            <input type="checkbox" id="check1" class="accordion-hidden">
+            <label for="check1" class="accordion-open"><p>デッサン</p></label>
+            <label for="check1" class="accordion-inner">
+                <!--barba読み込みリンク-->
+
+                <p>透視図法など</p>
+                <a href="dessan.html">
+                <span class="img-box">
+                    <img src="pictures/scan/photo032.jpg">
+                </span>
+                </a>
+            </label>
+            </li>
+
+            <li>
+            <input type="checkbox" id="check2" class="accordion-hidden">
+            <label for="check2" class="accordion-open"><p>色彩実習</p></label>
+            <label for="check2" class="accordion-inner">
+                <p>配色などの色を使うための基礎を学ぶものです</p>
+                <span class="img-box">
+                    <img src="pictures/"　alt="色彩　画像">
+                </span>
+            </label>
+            </li>
+
+            <li>
+            <input type="checkbox" id="check3" class="accordion-hidden">
+            <label for="check3" class="accordion-open"><p>マルチメディア実習</p></label>
+            <label for="check3" class="accordion-inner">
+                <p>各ソフトの使い方・媒体の扱い方等を学びます</p>
+                <span class="img-box">
+                    <img src="pictures/scan/pictogram.jpg">
+                </span>
+            </label>
+            </li>
+
+            <li>
+            <input type="checkbox" id="check4" class="accordion-hidden">
+            <label for="check4" class="accordion-open"><p>製品デザイン基礎実習</p></label>
+            <label for="check4" class="accordion-inner">
+                <p>実践に近い内容の実習をしています</p>
+                <span class="img-box">
+                    <img src="pictures/scan/posuta-.jpg">
+                </span>
+            </label>
+            </li>
+
+            <li>
+            <input type="checkbox" id="check5" class="accordion-hidden">
+            <label for="check5" class="accordion-open"><p>自主制作等</p></label>
+            <label for="check5" class="accordion-inner">
+                <p>ギターを作っています</p>
+                <span class="img-box">
+                    <img src="pictures/guitar.JPG">
+                </span>
+            </label>
+            </li>
+
+            <!--<li>
+            <input type="checkbox" id="check6" class="accordion-hidden">
+            <label for="check6" class="accordion-open"><p>デッサン</p></label>
+            <label for="check6" class="accordion-inner">
+                <span class="img-box">
+                    <img src="pictures/guitar.JPG">
+                </span>
+            </label>
+            </li>-->
+           </ul>
+        </div>
+         
+    
+    </section>
+    </section>
+
+    <section class="box6">
+        <h1>お問い合わせ</h1>
+        名前　メアド　要件
+        後で作るから勘弁
+    </section>
+</div>
+</section>
+</main>
+
+
+<script src="js/barba.min.js" type="text/javascript"></script>
+<script src="js/barba-custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+<!-----作成の上でのメモ--------->
+<!--
+・barba.jsは必ずページ遷移させたいところを囲む要素を、barba-wrapper、barba-containerの順で囲む必要がある。
+-->
